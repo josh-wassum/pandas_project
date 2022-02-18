@@ -24,9 +24,9 @@ Question 2: what is the fat to protein ratio of these protein rich foods?
 
 The next task was accomplished by using stacked bar charts. I divided the macro nutrients by gram and then stacked them in a bar chart to see what percentage of each gram was occupied by which macro nutrient. The only way to visualize each category is to run the application by view below the seafood chart and the meat, poultry chart.
 
-![](assets/Fat_Protein_Chart.png)
+![](assets/high_protein_table.png)
 
-![](assets/meatpoultryChart.png)
+![](assets/meatpultryChart.png)
 
 Question 3: what is the mean for each Macro by Gram?
 

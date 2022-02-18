@@ -1,15 +1,10 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
-
 I am using this free data set found on Kaggle: https://www.kaggle.com/niharika41298/nutrition-details-for-most-common-foods/code. This data includes some nutirional fact 
 about common foods found in the standard American Diet.
 
-{Describe your purpose for writing this software to analyze the data.}
 The purpose for writing this software is to prove my ability to develop software and build an analisys on said data when provided by a thrid party. In paricular, I wanted
 to analyze some of the foods we eat on a daily basis and see if we can't make some better choices with our diet.
-
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the data set, the questions and answers, the code running and a walkthrough of the code.}
 
 [Software Demo Video](http://youtube.link.goes.here)
 
@@ -21,17 +16,21 @@ The dataset was quite large, so I broke it up by category and enabled a user of 
 and then return results based upon that category. One interesting thing to note is that sea food contained one of the highest Protein to Fat
 ratios among all other categories, whereas meat, poultry typically contained more fat. Compare the two tables below:
 
-(assets/high_protein_table.png)
+[](assets/high_protein_table.png)
 
-(assets/MeatPoultryTable.png)
+[](assets/MeatPoultryTable.png)
 
 Question 2: what is the fat to protein ratio of these protein rich foods?
 
 The next task was accomplished by using stacked bar charts. I divided the macro nutrients by gram and then stacked them in a bar chart to see what percentage of each gram was occupied by which macro nutrient. The only way to visualize each category is to run the application by view below the seafood chart and the meat, poultry chart.
 
-(assets/Fat_Protein_Chart.png)
+[](assets/Fat_Protein_Chart.png)
 
-(assets/meatpoultryChart.png)
+[](assets/meatpoultryChart.png)
+
+Question 3: what is the mean for each Macro by Gram?
+
+The answer to this question is much easier to grasp than the last. The order of macros per gram is Carbs, then Fat, then Protein. From this we can gather that on average there is more fat in the common foods we eat than protein, so we need to make an effort to eat a high protein, low fat diet.
 
 # Development Environment
 

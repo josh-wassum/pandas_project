@@ -43,7 +43,6 @@ matplotlib was used to visualize the data using charts.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 * [Geeks For Geeks](https://www.geeksforgeeks.org/)
 * [Stack Overflow](https://stackoverflow.com/)
 * [matplotlib](https://matplotlib.org/)

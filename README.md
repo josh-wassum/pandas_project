@@ -16,7 +16,7 @@ The dataset was quite large, so I broke it up by category and enabled a user of 
 and then return results based upon that category. One interesting thing to note is that sea food contained one of the highest Protein to Fat
 ratios among all other categories, whereas meat, poultry typically contained more fat. Compare the two tables below:
 
-[](assets/high_protein_table.png)
+[](https://github.com/josh-wassum/pandas_project/blob/master/assets/Fat_Protein_Chart.png)
 
 [](assets/MeatPoultryTable.png)
 

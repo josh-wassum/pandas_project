@@ -16,17 +16,17 @@ The dataset was quite large, so I broke it up by category and enabled a user of 
 and then return results based upon that category. One interesting thing to note is that sea food contained one of the highest Protein to Fat
 ratios among all other categories, whereas meat, poultry typically contained more fat. Compare the two tables below:
 
-[](https://github.com/josh-wassum/pandas_project/blob/master/assets/Fat_Protein_Chart.png)
+![](assets/Fat_Protein_Chart.png)
 
-[](assets/MeatPoultryTable.png)
+![](assets/MeatPoultryTable.png)
 
 Question 2: what is the fat to protein ratio of these protein rich foods?
 
 The next task was accomplished by using stacked bar charts. I divided the macro nutrients by gram and then stacked them in a bar chart to see what percentage of each gram was occupied by which macro nutrient. The only way to visualize each category is to run the application by view below the seafood chart and the meat, poultry chart.
 
-[](assets/Fat_Protein_Chart.png)
+![](assets/Fat_Protein_Chart.png)
 
-[](assets/meatpoultryChart.png)
+![](assets/meatpoultryChart.png)
 
 Question 3: what is the mean for each Macro by Gram?
 

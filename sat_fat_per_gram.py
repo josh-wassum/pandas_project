@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plot
 
-food = pd.read_csv("nutrients_csvfile.csv")
+food = pd.read_csv("assets/nutrients_csvfile.csv")
 type(food)
 
 # Trace amounts of nutrients were denoted with a t, replacing that with 0.
@@ -26,12 +26,11 @@ categories = pd.unique(food['Category'])
 
 # Main function
 def main():
-
     choose_category()
+    calculate_mean()
 
 # Handles a user choosing a category
 def choose_category():
-
     choice = 'wrong'
 
     # Ensures the user can never pass an incorrect category
@@ -53,9 +52,30 @@ def macro_check(category):
 
     # Filtering based upon the ratio of fat to protein
     filtered_food_table['Ratio'] = filtered_food_table['Protein'] - filtered_food_table['Fat']
-    low_fat = filtered_food_table.nlargest(n=10, columns=['Ratio'])
+    if filtered_food_table['Fat'].count() >=10:
+        low_fat = filtered_food_table.nlargest(n=10, columns=['Ratio'])
+    else:
+        low_fat = filtered_food_table.nlargest(n=filtered_food_table['Fat'].count(), columns=["Ratio"])
+    low_fat['Protein'].sort_values(ascending=False)
 
     print(low_fat[['Food', 'Measure', 'Calories', 'Protein', 'Fat', 'Carbs']])
+
+# This function prints the mean in the command line.
+def calculate_mean():
+
+    converted_food = food
+
+    # Calculating Protein, Calories and Fat per Gram
+    protein_per_gram = round((converted_food['Protein'] / converted_food['Grams']), 2)
+    fat_per_gram = round((converted_food['Fat'] / converted_food['Grams']), 2)
+    carbs_per_gram = round((converted_food['Carbs'] / converted_food['Grams']), 2)
+
+    # Setting Fat, Protein and Calories to their new per gram values
+    converted_food['Fat'] = fat_per_gram
+    converted_food['Protein'] = protein_per_gram
+    converted_food['Carbs'] = carbs_per_gram
+
+    print(converted_food[['Protein', 'Fat', 'Carbs']].mean())
 
 # Builds the graph and takes a category as a paremeter
 def graph_builder(category):
@@ -76,10 +96,13 @@ def graph_builder(category):
 
     # Filtering my table based upon the Category
     filtered_food = converted_food.where(converted_food['Category'] == category)
-
+    
     # Filtering based upon the ratio of fat to protein
     filtered_food['Ratio'] = filtered_food['Protein'] - filtered_food['Fat']
-    low_fat = filtered_food.nlargest(n=10, columns=['Ratio'])
+    if filtered_food['Fat'].count() >=10:
+        low_fat = filtered_food.nlargest(n=10, columns=['Ratio'])
+    else:
+        low_fat = filtered_food.nlargest(n=filtered_food['Fat'].count(), columns=["Ratio"])
 
     # Setting up my variables to use within the graph
     x = (low_fat['Food'])
@@ -96,11 +119,9 @@ def graph_builder(category):
     plot.xlabel("Food")
     plot.ylabel("Grams")
     plot.xticks(rotation=70)
-
+    plot.title(f"High Protein ratio by {category}")
     plot.legend(loc=1)
-
     plot.tight_layout()
-
     plot.show()
 
 if __name__ == "__main__":

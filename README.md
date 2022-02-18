@@ -17,27 +17,41 @@ to analyze some of the foods we eat on a daily basis and see if we can't make so
 
 Question 1: which foods should I be eating if I want to increase my protein intake and decrease my fat intake?
 
-The dataset was quite large, so I broke it up by category and enabled a usre of the program to run the program form the command line, type in the category tey would like to view
-and then return results based upon that category. Here is an example table of foods that have a high protein and low fat intake obtaine by running the program:
+The dataset was quite large, so I broke it up by category and enabled a user of the program to run the program form the command line, type in the category tey would like to view
+and then return results based upon that category. One interesting thing to note is that sea food contained one of the highest Protein to Fat
+ratios among all other categories, whereas meat, poultry typically contained more fat. Compare the two tables below:
 
+(assets/high_protein_table.png)
+
+(assets/MeatPoultryTable.png)
 
 Question 2: what is the fat to protein ratio of these protein rich foods?
 
+The next task was accomplished by using stacked bar charts. I divided the macro nutrients by gram and then stacked them in a bar chart to see what percentage of each gram was occupied by which macro nutrient. The only way to visualize each category is to run the application by view below the seafood chart and the meat, poultry chart.
+
+(assets/Fat_Protein_Chart.png)
+
+(assets/meatpoultryChart.png)
+
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+The software was developed using VS Code as my development environment
 
-{Describe the programming language that you used and any libraries.}
+I used Python as the base language.
+Pandas was used to process the data.
+Numpy was used to help format the data.
+matplotlib was used to visualize the data using charts.
 
 # Useful Websites
 
 {Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* [Geeks For Geeks](https://www.geeksforgeeks.org/)
+* [Stack Overflow](https://stackoverflow.com/)
+* [matplotlib](https://matplotlib.org/)
+* [tutorialspoint](https://www.tutorialspoint.com/)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+* Ability to select the which Macros you would like to compare.
+* Ability to export charts created directly to a PowerPoint file.
+* Create averages for the entire dataset of each Macro.

@@ -54,4 +54,3 @@ matplotlib was used to visualize the data using charts.
 
 * Ability to select the which Macros you would like to compare.
 * Ability to export charts created directly to a PowerPoint file.
-* Create averages for the entire dataset of each Macro.

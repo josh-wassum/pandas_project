@@ -3,8 +3,7 @@
 I am using this free data set found on Kaggle: https://www.kaggle.com/niharika41298/nutrition-details-for-most-common-foods/code. This data includes some nutirional fact 
 about common foods found in the standard American Diet.
 
-The purpose for writing this software is to prove my ability to develop software and build an analisys on said data when provided by a thrid party. In paricular, I wanted
-to analyze some of the foods we eat on a daily basis and see if we can't make some better choices with our diet.
+The purpose for writing this software is to prove my ability in developing software that will analyze thrid party data. This software shows how I used the pandas library within python to create some visualization based up on data found within Kaggle. In paricular, I wanted to analyze some of the foods we eat on a daily basis and see if we can't make some better choices with our diet.
 
 [Software Demo Video](http://youtube.link.goes.here)
 

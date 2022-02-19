@@ -32,7 +32,7 @@ Question 3: what is the mean for each Macro by Gram?
 
 The answer to this question is much easier to grasp than the last. The order of macros per gram is Carbs, then Fat, then Protein. From this we can gather that on average there is more fat in the common foods we eat than protein, so we need to make an effort to eat a high protein, low fat diet. View the chart below:
 
-[](assets/averagepergram.png)
+![](assets/averagepergram.png)
 
 # Development Environment
 

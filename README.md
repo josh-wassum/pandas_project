@@ -6,6 +6,7 @@ about common foods found in the standard American Diet.
 The purpose for writing this software is to prove my ability to develop software and build an analysis on said data when provided by a third party. In particular, I wanted
 to analyze some of the foods we eat on a daily basis and see if we can't make some better choices with our diet.
 
+
 [Software Demo Video](https://youtu.be/5Gd4eh1dVv8)
 
 # Data Analysis Results
@@ -16,7 +17,7 @@ The dataset was quite large, so I broke it up by category and enabled a user of 
 and then return results based upon that category. One interesting thing to note is that sea food contained one of the highest Protein to Fat
 ratios among all other categories, whereas meat, poultry typically contained more fat. Compare the two tables below:
 
-![](assets/Fat_Protein_Chart.png)
+![](assets/high_protein_table.png)
 
 ![](assets/MeatPoultryTable.png)
 
@@ -24,7 +25,7 @@ Question 2: what is the fat to protein ratio of these protein rich foods?
 
 The next task was accomplished by using stacked bar charts. I divided the macro nutrients by gram and then stacked them in a bar chart to see what percentage of each gram was occupied by which macro nutrient. The only way to visualize each category is to run the application by view below the seafood chart and the meat, poultry chart.
 
-![](assets/high_protein_table.png)
+![](assets/Fat_Protein_Chart.png)
 
 ![](assets/meatpultryChart.png)
 
@@ -32,7 +33,7 @@ Question 3: what is the mean for each Macro by Gram?
 
 The answer to this question is much easier to grasp than the last. The order of macros per gram is Carbs, then Fat, then Protein. From this we can gather that on average there is more fat in the common foods we eat than protein, so we need to make an effort to eat a high protein, low fat diet. View the chart below:
 
-[](assets/averagepergram.png)
+![](assets/averagepergram.png)
 
 # Development Environment
 

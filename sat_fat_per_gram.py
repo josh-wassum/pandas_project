@@ -75,7 +75,20 @@ def calculate_mean():
     converted_food['Protein'] = protein_per_gram
     converted_food['Carbs'] = carbs_per_gram
 
-    print(converted_food[['Protein', 'Fat', 'Carbs']].mean())
+    mean_protein = converted_food['Protein'].mean()
+    mean_fat = converted_food['Fat'].mean()
+    mean_carbs = converted_food['Carbs'].mean()
+
+    mean_axis = ['Protein', 'Carbs', 'Fat']
+    mean_list = [mean_protein, mean_carbs, mean_fat]
+
+    plot.bar(mean_axis, mean_list)
+    plot.title('Mean of Macronutrients')
+    plot.xlabel('Macronutrients')
+    plot.ylabel('Per Gram')
+    plot.xticks(rotation=70)
+    plot.tight_layout()
+    plot.show()
 
 # Builds the graph and takes a category as a paremeter
 def graph_builder(category):
